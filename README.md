@@ -1,0 +1,3 @@
+{
+    "Tablon": "El tablon, Sosua"
+}
