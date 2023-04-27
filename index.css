@@ -1,22 +1,15 @@
 body {
     background: #fff;
 }
-
 header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: rgb(189, 231, 211);
     text-align: center;
 }
-
 main {
     background: #fff;
     text-align: center;
 }
-
-button {
-    background: red;
-}
-
 footer {
     background: rgb(189, 231, 211);
     text-align: center;
