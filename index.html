@@ -2,55 +2,44 @@
 <html lang="en">
 
 <head>
-    <title>Tablón, Sosúa.</title>
+    <title>El Tablón</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS v5.3.0 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <header>
-        <!-- place navbar here -->
-    </header>
-    <main>
-        <div id="app" class="container" style="background: rgb(189, 231, 211); text-align: center;"></div>
-        <div class="container" style="text-align: center;">
-            <a href="https://twitter.com/yuniorsosua/" target="_blank"><img src="https://appfamiliar.com/fotos/10247395_828708787157158_7004399338413881115_n.jpg" alt="Yunior Vargas Hernandez" style="max-width: 100%;"></a>
-        </div>
-        <!-- Button Listening -->
-        <div class="container" style="text-align: center; margin-top: 40px;">
-            <button onclick="button()" id="button" class="btn btn-success" style="text-align: center;">Clickeame</button>
-        </div>
-        <script>
-            // Function Button Listening
 
-            function button() {
-                var tituloButton = "<p>Soy Yunior Vargas Hernández el CEO de este proyecto.</p>"
-                console.log("Esta aplicación web está en modo de desarrollo.");
-                const soto = document.getElementById("button").innerHTML = tituloButton
-            }
-        </script>
 
-        <script>
-            function tablon() {
-                return (
-                    document.getElementById("app").innerHTML = "<div><h5>El Tablón, Sosúa, República Dominicana.</h5><p>El Tablón es un lugar hermoso, ubicado en la desembocadura del rio Sosúa.</p></div>"
-                )
-            };
-            tablon()
-        </script>
-    </main>
-    <footer>
+    <div id="root" class="container"></div>
+    <div class="container" style="text-align: center;">
+        <a href="https://twitter.com/yuniorsosua/" target="_blank"><img src="https://appfamiliar.com/fotos/10247395_828708787157158_7004399338413881115_n.jpg" alt="Yunior Vargas Hernandez" style="max-width: 100%; max-height: auto;"></a>
+    </div>
+    <!-- Button Listening -->
+    <div class="container" style="text-align: center; margin-top: 40px;">
+        <button onclick="button()" id="button" class="btn btn-success" style="text-align: center;">Clickeame</button>
+    </div>
+    <script>
+        // Function Button Listening
+
+        function button() {
+            const tituloButton = "<p>Soy Yunior Vargas Hernández el CEO de este proyecto.</p>"
+            const soto = document.getElementById("button").innerHTML = tituloButton
+        }
+    </script>
+
+
+    <footer class="container">
         <!-- place footer here -->
-        <div id="footer" class="container" style="background: rgb(189, 231, 211); text-align: center; margin-top: 40px;"> </div>
+        <div id="footer"></div>
         <script>
             document.getElementById("footer").innerHTML = "<p>@El Tablón, Sosúa, República Dominicana.</p>" + new Date().toString();
         </script>
     </footer>
-
+    <script src="index.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
